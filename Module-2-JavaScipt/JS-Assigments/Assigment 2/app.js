@@ -173,6 +173,7 @@ document.writeln(`<br>Your Age: ${age}<br><br>`)
 
 
 //------------------------Q12
+// b)
 var radius = 5;
 var pi = 3.142;
 
@@ -181,12 +182,25 @@ var area = pi * radius * radius;
 document.writeln(`<br><h2>The Geometrizer</h2>`)
 document.writeln("Radius of the circle is: " + radius + "<br>");
 document.writeln("The circumference is: " + circumference + "<br>");
-document.writeln("The area is: " + area);
+document.writeln("The area is: " + area+"<br><br>") ;
 
 
 
 
 //------------------------Q13
+// Q13
+var favrtsnack = "Biscuits";
+var currentAge = 22;
+var maxAge = 50;
+var snacksPerDay = 5;
+var totalSnacks = (maxAge - currentAge) * 365 * snacksPerDay;
+
+document.writeln(`<br><h2>The Lifetime Supply Calculator</h2>`)
+document.writeln(`<br>Favourite Snack: ${favrtsnack}`)
+document.writeln(`<br>Current Age: ${currentAge}`)
+document.writeln(`<br>Estimated Maximum Age: ${maxAge}`)
+document.writeln(`<br>Amount of Snacks per day: ${snacksPerDay}%`)
+document.writeln("<br>You will need " + totalSnacks + " " + favrtsnack + " to last you until the ripe old age of " + maxAge + ".\n\n");
 
 
 
