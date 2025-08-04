@@ -119,6 +119,13 @@ document.writeln(`<br><br>Temperature in Fahrenheight is: ${temp_F} °F and in F
 
 //------------------------Q7
 
+var p_item1=650;
+var p_item2=100;
+var q_item1=3;
+var q_item7=7;
+var shiipingfee=100;
+var totalcost = (p_item1*q_item1)+(p_item2*q_item2)+shiiping;
+document.writeln(`<br><br>Total Cost of Your Order is: ${totalcost} PKR`);
 
 //------------------------Q8
 //------------------------Q9
