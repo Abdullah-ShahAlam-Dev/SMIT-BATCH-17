@@ -113,7 +113,7 @@ var F = (temp_C * 9/ 5) + 32;  // celsius 2 fehrenheight
 var temp_F = 70;
 var c = (temp_F -32) * 5/ 9;  // fahrenheight 2 celsius
 document.writeln(`<br><br>Temperature in Celsius is: ${temp_C} °C and in Fahrenheit is: ${F} °F`);
-document.writeln(`<br><br>Temperature in Fahrenheight is: ${temp_F} °F and in Fahrenheit is: ${c} °C`);
+document.writeln(`<br><br>Temperature in Fahrenheight is: ${temp_F} °F and in Fahrenheit is: ${c} °C<br><br>`);
 
 
 
@@ -122,19 +122,85 @@ document.writeln(`<br><br>Temperature in Fahrenheight is: ${temp_F} °F and in F
 var p_item1=650;
 var p_item2=100;
 var q_item1=3;
-var q_item7=7;
+var q_item2=7;
 var shiipingfee=100;
-var totalcost = (p_item1*q_item1)+(p_item2*q_item2)+shiiping;
-document.writeln(`<br><br>Total Cost of Your Order is: ${totalcost} PKR`);
+var totalcost = (p_item1*q_item1)+(p_item2*q_item2)+shiipingfee;
+document.writeln(`<br><h2>Shopping Cart</h2>`)
+document.write(`<br>Price of Item 1 is: ${p_item1}`);
+document.write(`<br>Quantity of Item 1 is: ${q_item1}`);
+document.write(`<br>Price of Item 2 is: ${p_item2}`);
+document.write(`<br>Quantity of Item 2 is: ${q_item2}`);
+document.write(`<br>Shipping Charges: ${shiipingfee}`);
+document.writeln(`<br><br>Total Cost of Your Order is: ${totalcost} PKR<br><br>`);
+
+
 
 //------------------------Q8
+var total_marks =980;
+var subject1 =402;
+var subject2 =402;
+var obtained_marks =subject1+subject2;
+var Percentage = (obtained_marks / total_marks ) *100;
+document.writeln(`<br><h2>Marks Sheet</h2>`)
+document.writeln(`<br>Total marks: ${total_marks}`)
+document.writeln(`<br>Marks Obtained: ${obtained_marks}`)
+document.writeln(`<br>Percentage: ${Percentage}%<br><br>`)
+
+
 //------------------------Q9
+var us_dollar=10;
+var saudi_riyals=25;
+var total_currency_in_PKR = (us_dollar * 104.80) + (saudi_riyals * 28);
+document.writeln(`<br><h2>Currency In PKR</h2>`)
+document.writeln(`<br>Total Currency in PKR: ${total_currency_in_PKR}`)
+
+
+
 //------------------------Q10
-//------------------------Q4
-//------------------------Q4
-//------------------------Q4
-//------------------------Q4
-//------------------------Q4
-//------------------------Q4
-//------------------------Q4
+var y = 10;  
+var result = ((y + 5) * 10) / 2;
+document.writeln("<br>Result In a Single Expression: " + result);
+
+
+//------------------------Q11
+var current_year = 2025;
+var birth_year = 2003;
+var age= current_year-birth_year;
+document.writeln(`<br><h2>Age Calculator</h2>`)
+document.writeln(`<br>Current Year: ${current_year}`)
+document.writeln(`<br>Birth Year: ${birth_year}`)
+document.writeln(`<br>Your Age: ${age}<br><br>`)
+
+
+//------------------------Q12
+var radius = 5;
+var pi = 3.142;
+
+var circumference = 2 * pi * radius;
+var area = pi * radius * radius;
+document.writeln(`<br><h2>The Geometrizer</h2>`)
+document.writeln("Radius of the circle is: " + radius + "<br>");
+document.writeln("The circumference is: " + circumference + "<br>");
+document.writeln("The area is: " + area);
+
+
+
+
+//------------------------Q13
+
+
+
+
+
+
+
+
+
 // ************************************CHAPTER 6****************************
+//------------------------Q1
+
+//------------------------Q2
+
+//------------------------Q3
+
+//------------------------Q4
