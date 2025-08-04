@@ -173,10 +173,12 @@ document.writeln(`<br>Your Age: ${age}<br><br>`)
 
 
 //------------------------Q12
-// b)
+// a)
 var radius = 5;
-var pi = 3.142;
 
+
+// b)
+var pi = 3.142;
 var circumference = 2 * pi * radius;
 var area = pi * radius * radius;
 document.writeln(`<br><h2>The Geometrizer</h2>`)
@@ -212,6 +214,7 @@ document.writeln("<br>You will need " + totalSnacks + " " + favrtsnack + " to la
 
 // ************************************CHAPTER 6****************************
 //------------------------Q1
+
 
 //------------------------Q2
 
