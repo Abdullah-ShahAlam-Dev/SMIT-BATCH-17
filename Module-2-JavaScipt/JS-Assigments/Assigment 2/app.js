@@ -202,9 +202,10 @@ document.writeln(`<br>Favourite Snack: ${favrtsnack}`)
 document.writeln(`<br>Current Age: ${currentAge}`)
 document.writeln(`<br>Estimated Maximum Age: ${maxAge}`)
 document.writeln(`<br>Amount of Snacks per day: ${snacksPerDay}%`)
-document.writeln("<br>You will need " + totalSnacks + " " + favrtsnack + " to last you until the ripe old age of " + maxAge + ".\n\n");
-
-
+document.writeln("<br>You will need " + totalSnacks + " " + favrtsnack + " to last you until the ripe old age of " + maxAge + "<br><br>");
+//      \n documnte pr work nhi krta it work only html or their tags
+//      html tags just doucemnt ki  object mein chltaa hi whatsever the the quores they are using here `` OR double it works with both
+//console.log(`hellow\nWorld`)
 
 
 
@@ -214,10 +215,105 @@ document.writeln("<br>You will need " + totalSnacks + " " + favrtsnack + " to la
 
 // ************************************CHAPTER 6****************************
 //------------------------Q1
+document.writeln("<br>Result")
+var a =10;
+document.writeln("<br>The Value of a is:"+a)
+document.writeln("<br>....................................<br>")
+
+document.writeln("<br>The Value of ++a is:"+ ++a)
+document.writeln("<br>Now the Value of a is:"+ a+"<br>")
+
+document.writeln("<br>The Value of a++ is:"+ a++)
+document.writeln("<br>Now the Value of a is:"+ a+"<br>")
+
+document.writeln("<br>The Value of --a is:"+ --a)
+document.writeln("<br>Now the Value of a is:"+ a+"<br>")
+
+document.writeln("<br>The Value of a-- is:"+ a--)
+document.writeln("<br>Now the Value of a is:"+ a+"<br><br><br>")
+//=====================METHOD~2
+// let a = 10;
+// document.write(`
+//   Result:<br>
+//   The value of a is: ${a}<br>
+//   -----------------------<br>
+//   The value of ++a is: ${++a}<br>
+//   Now the value of a is: ${a}<br><br>
+//   The value of a++ is: ${a++}<br>
+//   Now the value of a is: ${a}<br><br>
+//   The value of --a is: ${--a}<br>
+//   Now the value of a is: ${a}<br><br>
+//   The value of a-- is: ${a--}<br>
+//   Now the value of a is: ${a}<br>
+// `);
+
+
+
+
 
 
 //------------------------Q2
+// 2. What will be the output in variables a, b & result after
+// execution of the following script:
+// --a;
+// --a - --b;
+// --a - --b + ++b;
+// --a - --b + ++b + b--;
+var a = 2, b = 1;
+document.writeln(`<br>a is: ${a} <br>b is: ${b}`)   // a is : 2 b is: 1
+document.writeln("<br>-------------------------<br>")
+document.writeln(`<br>Expression Evaluation step 1 (--a), Result is: ${--a}`)  // a is : 1
+c = --a - --b; // store a result of first operations (First 2 terms)
+document.writeln(`<br>Expression Evaluation step 2 (--a - --b), Result is: ${c}`) // a is 1 , b is 0 ,  1- 0 is , 0
+document.writeln(`<br>Expression Evaluation step 3 (--a - --b + ++b), Result is: ${c + ++b }`) // 
+document.writeln(`<br>Expression Evaluation step 4 (--a - --b + ++b + b--), Result is: ${c+ b--}`)
+
+var a = 2, b = 1 , result = --a - --b + ++b + b--; // var result = --a - --b + ++b + b--; // Here, we should not call/say this it an iteration,
+// because all operations happen in a single expression., So we can say: these are "expression evaluation steps".
+document.writeln(`<br>Expression Evaluation Final Result ( Sum of All Results 1 + 0 + 1 + 1 ) is: ${result}<br><br>`);
+
+
+
+
 
 //------------------------Q3
+var name = prompt("Please Enter your name: 😊");// Take input from user
+alert("Hello " + name + ", Welcome! to Assigment 2 & 3 from chapter 4 - 9");// Greet the user, on popup
+document.write("Hello, " + name + "! Welcome. to Chapter # 9😊"); // Greet the user, on web page
 
-//------------------------Q4
+
+//------------------------Q5
+var t_num = + prompt("Assigment #3 Chapter - 9\n\tQ5\nPlease Enter a number for Generate a Multiplication table:",5);
+document.writeln(`<br><br><h4>Table of ${t_num} :</h4>`);
+for (var i = 1; i <= 10; i++) {
+    document.write(` ${t_num} X ${i} = ${t_num* i}<br>`)
+}
+
+//------------------------Q6
+
+var s1 = prompt("Enter name of first subject:");
+var s2 = prompt("Enter name of second subject:");
+var s3 = prompt("Enter name of third subject:");
+var totalMarks = 100;
+
+var marks1 = +prompt("Enter obtained marks for " + s1 + ":");
+var marks2 = +prompt("Enter obtained marks for " + s2 + ":");
+var marks3 = +prompt("Enter obtained marks for " + s3 + ":");
+
+var totalObtained = marks1 + marks2 + marks3;
+var percentage1 = (marks1 / totalMarks) * 100;
+var percentage2 = (marks2 / totalMarks) * 100;
+var percentage3 = (marks3 / totalMarks) * 100;
+var overallPercentage = (totalObtained / (3 * totalMarks)) * 100;
+
+document.write("<table border='1' cellpadding='5'>");
+document.write("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th><th>Percentage</th></tr>");
+document.write("<tr><td>" + s1 + "</td><td>100</td><td>" + marks1 + "</td><td>" + percentage1.toFixed(2) + "%</td></tr>");
+document.write("<tr><td>" + s2 + "</td><td>100</td><td>" + marks2 + "</td><td>" + percentage2.toFixed(2) + "%</td></tr>");
+document.write("<tr><td>" + s3 + "</td><td>100</td><td>" + marks3 + "</td><td>" + percentage3.toFixed(2) + "%</td></tr>");
+document.write("<tr><th>Total</th><th>300</th><th>" + totalObtained + "</th><th>" + overallPercentage.toFixed(2) + "%</th></tr>");
+document.write("</table>");
+
+
+
+
