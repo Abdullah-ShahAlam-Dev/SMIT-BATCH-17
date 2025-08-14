@@ -313,7 +313,7 @@ document.write("<tr><td>" + s2 + "</td><td>100</td><td>" + marks2 + "</td><td>" 
 document.write("<tr><td>" + s3 + "</td><td>100</td><td>" + marks3 + "</td><td>" + percentage3.toFixed(2) + "%</td></tr>");
 document.write("<tr><th>Total</th><th>300</th><th>" + totalObtained + "</th><th>" + overallPercentage.toFixed(2) + "%</th></tr>");
 document.write("</table>");
-
+// COMPLETED TILL CHAPTER 9 , In this Files , used Prompt concepts already in this file.
 
 
 
