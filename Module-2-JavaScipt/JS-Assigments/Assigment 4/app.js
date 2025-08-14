@@ -1,4 +1,5 @@
 
+// *************************************CHAPTER 10 & 11.
 // -----------------------Q1
 var city = prompt("Enter your city name:");
 if (city === "Karachi") {
