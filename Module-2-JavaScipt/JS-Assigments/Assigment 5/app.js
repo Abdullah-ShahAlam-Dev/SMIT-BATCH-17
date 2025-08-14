@@ -1,3 +1,4 @@
+// -----------------------CHAPTER 12 13 14 From Book
 // -----------------------Q1
 var ascii = prompt("Enter a any character")
 if (ascii >= "0" && ascii < "9") { //48 se 57 tak
@@ -128,5 +129,4 @@ if (isNaN(time)) {// Validate input, accept only numbers
         alert(greeting);    // Output the greeting
     }
 }
-
 
