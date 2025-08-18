@@ -65,22 +65,78 @@ document.write(`Score of ${students[2]} is ${scores[2]}. → ${(scores[2]/totalM
 
 
 
-//--------------------Q
+//--------------------Q9
+
+
+
+
+
+//--------------------Q10
+//---Array sorting method, study baad mein
 
 
 
 
 //--------------------Q11
-document.write("<h2>Q10: Copy 3 Array Elements.</h2>");
+document.write("<h2>Q11: Copy 3 Array Elements.</h2>");
 var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
 var selectedCities = cities.slice(1, 4);
 document.writeln(`Cities List: <br> ${cities} <br> Selected Cities: <br> ${selectedCities}`);
 
 
+//--------------------Q12
+//----To join a array using .join property
+document.write("<h2>Q12: Merged Array Elements.</h2>");
+var arr = ["This ", "is ", " my ", " cat"];
+var mergedArr=arr.join(" "); // Output: This is my cat
+document.writeln(`Array:<br> ${arr}<br>String:<br> ${mergedArr}`);
+
+
+//--------------------Q13
+var stack = [];
+stack1.push("Keyboard");
+stack.push("Mouse");
+stack.push("Printer");
+stack.push("Monitor");
+
+document.write("<h2>Q14: Merged Array Elements.</h2>");
+document.write("Devices:<br>" + stack + "<br><br>");
+
+document.write("Out: <br>" + stack.shift() + "<br>");
+document.write("Out: <br>" + stack.shift() + "<br>");
+document.write("Out: <br>" + stack.shift() + "<br>");
+document.write("Out: <br>" + stack.shift() + "<br>");
+
+//--------------------Q14
+
+let stack = [];
+stack.push("Keyboard");
+stack.push("Mouse");
+stack.push("Printer");
+stack.push("Monitor");
+
+document.write("<h2>Q14: Merged Array Elements.</h2>");
+document.write("Devices:<br>" + stack + "<br><br>");
+
+document.write("Out: <br>" + stack.pop() + "<br>");
+document.write("Out: <br>" + stack.pop() + "<br>");
+document.write("Out: <br>" + stack.pop() + "<br>");
+document.write("Out: <br>" + stack.pop() + "<br>");
+
+
+
 //--------------------Q
-//--------------------Q
-//--------------------Q
-//--------------------Q
+let manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+<select>
+  <option>Apple</option>
+  <option>Samsung</option>
+  <option>Motorola</option>
+  <option>Nokia</option>
+  <option>Sony</option>
+  <option>Haier</option>
+</select>
+
 //--------------------Q
 //--------------------Q
 //--------------------Q
