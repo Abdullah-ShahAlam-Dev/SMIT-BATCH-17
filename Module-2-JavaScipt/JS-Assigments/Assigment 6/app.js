@@ -7,7 +7,7 @@
 let studentsLiteral = [];
 
 // 2. Object notation (empty array)
-let studentsObject = new Array();
+let studentsObject = new Array();// isko constructor mein bhi use krtee
 
 // 3. String array
 let fruits = ["Apple", "Banana", "Cherry"];
@@ -21,17 +21,47 @@ let flags = [true, false, true];
 // 6. Mixed array
 let mixedData = ["Hello", 42, true, null];
 
+// 7. Education Qualification
+let qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+//<li> ke bina koi numbering ya listing nahi hogi. <ol> ya <ul> apni numbering/tab tak banate hi tab hain jab unke andar <li> tags hon.
+document.write("<h2>Q7: Qualifications:</h2>");
+document.write("<ol>");
+document.write("<li>" + qualifications[0] + "</li>");
+document.write("<li>" + qualifications[1] + "</li>");
+document.write("<li>" + qualifications[2] + "</li>");
+document.write("<li>" + qualifications[3] + "</li>");
+document.write("<li>" + qualifications[4] + "</li>");
+document.write("<li>" + qualifications[5] + "</li>");
+document.write("<li>" + qualifications[6] + "</li>");
+document.write("<li>" + qualifications[7] + "</li>");
+document.write("</ol>");
 
-
-
-//--------------------Q8
-let students = ["Ali", "Ahmed", "Sara"];
+// document.write("<h2>Qualifications:</h2>");
+// document.write(
+    //   "<ol>" +
+    //     "<li>" + qualifications[0] + "</li>" +
+    //     "<li>" + qualifications[1] + "</li>" +
+    //     "<li>" + qualifications[2] + "</li>" +
+    //     "<li>" + qualifications[3] + "</li>" +
+    //     "<li>" + qualifications[4] + "</li>" +
+    //     "<li>" + qualifications[5] + "</li>" +
+    //     "<li>" + qualifications[6] + "</li>" +
+    //     "<li>" + qualifications[7] + "</li>" +
+    //   "</ol>"
+    // );
+    
+    
+    
+    
+    // 8. Education Qualification
+    //--------------------Q8
+document.write("<h2>Q8: Scores Of Students:</h2>");
+let students = ["Abdullah", "Ayesha", "Sara"];
 let scores = [400, 350, 480];
 let totalMarks = 500;
-
-document.write(`${students[0]} scored ${scores[0]} out of ${totalMarks} → ${(scores[0]/totalMarks)*100}%<br>`);
-document.write(`${students[1]} scored ${scores[1]} out of ${totalMarks} → ${(scores[1]/totalMarks)*100}%<br>`);
-document.write(`${students[2]} scored ${scores[2]} out of ${totalMarks} → ${(scores[2]/totalMarks)*100}%<br>`);
+document.write(`Score of ${students[0]} is ${scores[0]}. → ${(scores[0]/totalMarks)*100}%<br>`);
+document.write(`Score of ${students[1]} is ${scores[1]}. → ${(scores[1]/totalMarks)*100}%<br>`);
+document.write(`Score of ${students[2]} is ${scores[2]}. → ${(scores[2]/totalMarks)*100}%<br>`);
 
 
 
@@ -41,11 +71,10 @@ document.write(`${students[2]} scored ${scores[2]} out of ${totalMarks} → ${(s
 
 
 //--------------------Q11
-let cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
-let selectedCities = cities.slice(1, 4);
-document.write("Cities List: " + cities + "<br>");
-document.write("Selected Cities: " + selectedCities);
-
+document.write("<h2>Q10: Copy 3 Array Elements.</h2>");
+var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+var selectedCities = cities.slice(1, 4);
+document.writeln(`Cities List: <br> ${cities} <br> Selected Cities: <br> ${selectedCities}`);
 
 
 //--------------------Q
