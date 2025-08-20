@@ -66,7 +66,6 @@ document.write(`Score of ${students[2]} is ${scores[2]}. → ${(scores[2] / tota
 
 
 //--------------------Q9
-
 // i uses .join for add sapce after comma
 
 document.write("<h2>Q9: Colors</h2>");
@@ -107,7 +106,7 @@ var indexToDelete = parseInt(prompt("Enter index to delete color(s) from:"));
 var countToDelete = parseInt(prompt("How many colors to delete?"));
 colors.splice(indexToDelete, countToDelete);
 document.write("<b>g)<br></b>After deleting color(s): " + colors.join(", ") + "<br>");
-document.write("<b>g)<br></b>After deleting color(s): " + colors + "<br>");
+
 
 
 
@@ -115,6 +114,10 @@ document.write("<b>g)<br></b>After deleting color(s): " + colors + "<br>");
 //--------------------Q10
 document.write("<h2>Q10: Array's Sorting Method. </h2>");
 //---Array sorting method, study baad mein
+var ScoresArrays = [320,230,480,120]
+document.writeln(`Scores of Students: ${ScoresArrays.join(", ")}<br>`) // use join for space after comma
+var sorting = ScoresArrays.sort((a, b) => a - b);
+document.writeln(`Ordered Scores OF Students: ${sorting}`)
 
 
 
