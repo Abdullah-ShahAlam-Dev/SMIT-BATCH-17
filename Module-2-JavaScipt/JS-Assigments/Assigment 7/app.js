@@ -1,24 +1,23 @@
 //********************Chapter 18-20: Arrays and Loops**********************//
 
 //---------------------Q1
-//  Empty multidimensional array
-var multiArray = []; // Declare an empty array
-
-// Adding empty arrays inside it (optional)
-multiArray.push([]); // to add a whole aarray inside the array "multiArray"
-multiArray.push([]);
-multiArray.push([]);
-
+// Declare then initialize empty multidimensional array
 document.write("<h2>Q1: Empty Multidimensional Array</h2>");
+var myArray = [ [], [], [] ]; // 3 empty arrays ke saath initialize kiya
+document.writeln(myArray);
+
+// --------Method -2
+var multiArray = []; // start empty
+multiArray.push([]); // add first empty array
+multiArray.push([]); // add second empty array
+multiArray.push([]); // add third empty array
 document.writeln(multiArray);
 
 
-
-
 //---------------------Q2
-// Matrix representation
+// Matrix representation 2D array 
 var matrix = [
-    [0, 1, 2, 3],
+    [0, 1, 2, 3],//each row represent inner seprate array 
     [1, 0, 1, 2],
     [2, 1, 0, 1]
 ];
