@@ -1,8 +1,31 @@
 //********************Chapter 18-20: Arrays and Loops**********************//
 
 //---------------------Q1
+//  Empty multidimensional array
+var multiArray = []; // Declare an empty array
+
+// Adding empty arrays inside it (optional)
+multiArray.push([]); // to add a whole aarray inside the array "multiArray"
+multiArray.push([]);
+multiArray.push([]);
+
+document.write("<h2>Q1: Empty Multidimensional Array</h2>");
+document.writeln(multiArray);
+
+
+
 
 //---------------------Q2
+// Matrix representation
+var matrix = [
+    [0, 1, 2, 3],
+    [1, 0, 1, 2],
+    [2, 1, 0, 1]
+];
+document.write("<h2>Q2: Matrix</h2>");
+for (var i = 0; i < matrix.length; i++) {
+    document.writeln(matrix[i]+"<br>");
+}
 
 
 //---------------------Q3
@@ -16,12 +39,12 @@ for (var i = 1; i <= 10; i++) {
 
 
 //---------------------Q4
-// var tableNum = +prompt("Q4\nEnter a Number to show its multiplication table.")
-// var tableLength = +prompt("Q4\nEnter a Required Length For Your Multiplication Table")
-// document.write(`<h2>Q4: Multiplicarion Table</h2><br>Multiplication Table of ${tableNum}<br>Length ${tableLength}<br><br>`);
-// for (var i=1; i<=tableLength; i++){
-//     document.writeln(`${tableNum} x ${i} = ${tableNum*i}<br>`)
-// }
+var tableNum = +prompt("Q4\nEnter a Number to show its multiplication table.")
+var tableLength = +prompt("Q4\nEnter a Required Length For Your Multiplication Table")
+document.write(`<h2>Q4: Multiplicarion Table</h2><br>Multiplication Table of ${tableNum}<br>Length ${tableLength}<br><br>`);
+for (var i=1; i<=tableLength; i++){
+    document.writeln(`${tableNum} x ${i} = ${tableNum*i}<br>`)
+}
 
 
 
