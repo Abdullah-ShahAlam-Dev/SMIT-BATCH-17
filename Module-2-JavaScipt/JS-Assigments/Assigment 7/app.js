@@ -109,7 +109,7 @@ for (var i = 0; i <= A.length - 1; i++) {
         //so neeed do stop breaking loop by break it iterations of i whether it found, imedeidate break
     
         // otherwise after loop 'i' will go out of bound, means agr valid index se bahr  ksi index ko access 
-        // krne ki try krein here cake ka index 3  ki jagha 5 ko that will be wrong.
+        // krne ki try krein here CHIPS ka index 3  ki jagha 5 ko that will be wrong.
     }
 
 }
