@@ -3,7 +3,7 @@
 //---------------------Q1
 // Declare then initialize empty multidimensional array
 document.write("<h2>Q1: Empty Multidimensional Array</h2>");
-var myArray = [ [], [], [] ]; // 3 empty arrays ke saath initialize kiya
+var myArray = [[], [], []]; // 3 empty arrays ke saath initialize kiya
 document.writeln(myArray);
 
 // --------Method -2
@@ -23,7 +23,7 @@ var matrix = [
 ];
 document.write("<h2>Q2: Matrix</h2>");
 for (var i = 0; i < matrix.length; i++) {
-    document.writeln(matrix[i]+"<br>");
+    document.writeln(matrix[i] + "<br>");
 }
 
 
@@ -41,8 +41,8 @@ for (var i = 1; i <= 10; i++) {
 var tableNum = +prompt("Q4\nEnter a Number to show its multiplication table.")
 var tableLength = +prompt("Q4\nEnter a Required Length For Your Multiplication Table")
 document.write(`<h2>Q4: Multiplicarion Table</h2><br>Multiplication Table of ${tableNum}<br>Length ${tableLength}<br><br>`);
-for (var i=1; i<=tableLength; i++){
-    document.writeln(`${tableNum} x ${i} = ${tableNum*i}<br>`)
+for (var i = 1; i <= tableLength; i++) {
+    document.writeln(`${tableNum} x ${i} = ${tableNum * i}<br>`)
 }
 
 
@@ -93,13 +93,39 @@ for (var i = 1; i <= input_Lentgh; i++) {
 
 
 //---------------------Q7
-document.write("<h2>Q7: </h2>");
+// initally assume kra hi not found if se check kra ki found yes ? if true then change value
+document.write("<h2>Q7: Search By User Input</h2>");
+A = ["cake", "apple pie", "cookie", "chips", "patties"]
+
+var input = prompt("Q7\nWelcome To ABC Bakery What do you order Sir/ma'am?")
+var lowerInput= input.toLowerCase();//lowercase return a new string need to store in 
+// a variable ok, it dont modify orignal string
+
+var result=false;
+for (var i = 0; i <= A.length - 1; i++) {
+    if (lowerInput === A[i].toLowerCase()) {
+        result= true;
+        break;//agr break na kroun tw after loop i ko max length se ek zydaa dekheega due to post increment 
+        //so neeed do stop breaking loop by break it iterations of i whether it found, imedeidate break
+    
+        // otherwise after loop 'i' will go out of bound, means agr valid index se bahr  ksi index ko access 
+        // krne ki try krein here cake ka index 3  ki jagha 5 ko that will be wrong.
+    }
+
+}
+
+if(result==true)
+document.write(`${input} is available at index ${i} in our Bakery.`);
+else {
+    document.write(`We are sorry '${input}' is not available in our Bakery. `);
+}
+
 
 
 
 
 //-------------------------------------------------------------Q8
-// // ===============WRONG APPROCH
+// // ========================================================WRONG APPROCH
 // document.write("<h2>Q8: Largest Number In a Array</h2>");
 // A = [ 24, 53, 78, 91, 12]
 // document.write("Orignal Array Items: " + A)
