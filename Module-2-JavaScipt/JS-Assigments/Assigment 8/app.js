@@ -76,3 +76,18 @@ var userInput = prompt("Enter any text to convert in Capitalize");
 var upperCase = userInput.toUpperCase();
 document.write(`User Input: ${userInput} <br>`);
 document.write(`Upper Case: ${upperCase} <br>`);
+
+
+//---------------------Q11
+
+//---------------------Q12
+
+//---------------------Q13
+
+//---------------------Q14
+
+//---------------------Q15
+
+//---------------------Q16
+
+//---------------------Q17
