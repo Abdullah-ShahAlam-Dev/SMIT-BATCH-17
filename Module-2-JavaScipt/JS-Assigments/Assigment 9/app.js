@@ -17,36 +17,41 @@ document.write("Floor value: " + Math.floor(neg_num) + "<br>");
 document.write("Ceil value: " + Math.ceil(neg_num) + "<br>");
 
 //---------------------Q3
-document.write("<h2>Q2: </h2>");
+document.write("<h2>Q3: Absolute Number</h2>");
 var abs_num = +prompt("Enter a number for finding its absolute:");
 document.write("The Absolute Value of "+abs_num+"  is: " + Math.abs(abs_num) + "<br>");
 
 //---------------------Q4
-document.write("<h2>Q2: </h2>");
+document.write("<h2>Q4: Simulates A Dice</h2>");
 
 
 
 //---------------------Q5
-document.write("<h2>Q2: </h2>");
+document.write("<h2>Q5: </h2>");
 
 
 //---------------------Q6
-document.write("<h2>Q2: </h2>");
+var digits =100;
+document.write("<h2>Q6: Random Number Between 1 to 100</h2>");
+var random_Num = Math.floor(Math.random() * digits) + 1;
+document.write("<h2>Q6: Random Number</h2>");
+document.write("Random number (1–100): " + random_Num + "<hr>");
 
 
 //---------------------Q7
-document.write("<h2>Q2: </h2>");
+document.write("<h2>Q7: Weight Of User</h2>");
+var weightInput = prompt("Enter your weight (e.g. 50, 50kgs, 50.2kgs, 50.2kilograms):");
+var weight = parseFloat(weightInput);
+document.write(`Your weight is:  ${weight}   kilograms<hr>`);
 
 
 
 //---------------------Q8
-document.write("<h2>Q2: </h2>");
-
-
-//---------------------Q9
-document.write("<h2>Q2: </h2>");
-
-
-//---------------------Q10
-document.write("<h2>Q2: </h2>");
-
+document.write("<h2>Q8: Random Secret Number from 1 to 10</h2>");
+var digits =10;
+var num = +prompt("Enter a Random Number between 1 to 10");
+var result=Math.floor(Math.random()*digits)+1// +1 isleye kraki random 9.999 tk cjltaa tw 10 ki leye add 1 kra
+if(num==result)
+document.write(`Congradulates the user👍 You Hit the Secret Number! ${result}`);
+else
+document.write(`Try Again😒, You missed the Secret Number! ${result}`);
