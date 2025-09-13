@@ -2,7 +2,7 @@
 
 //---------------------Q1
 
-// Assignment #38-44
+// Assignment #39-44
 // FUNCTIONS, SWITCH STATEMENTS, WHILE… DO-WHILE LOOPS
 
 // Q1: Power Function
