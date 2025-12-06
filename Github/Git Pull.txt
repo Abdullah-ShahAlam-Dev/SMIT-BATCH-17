@@ -1,0 +1,15 @@
+
+git fetch → remote Repo ki latest info download karta hai
+
+
+
+
+git diff → wo info compare karta hai
+git diff --name-status HEAD..origin/main
+
+
+git remote show origin → wo info display karta hai
+
+
+
+git pull -> this will update local folders to remote server repo
