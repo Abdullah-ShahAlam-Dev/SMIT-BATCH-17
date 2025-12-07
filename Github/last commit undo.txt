@@ -1,0 +1,5 @@
+For just Undo LAst commtit
+eg accidentally delete commit hugya hu
+so, use this
+
+git reset HEAD~1

@@ -1,0 +1,15 @@
+FOR UNSTAGE or Restore a Files after Add before commit
+
+-- = commit mat chherna, sirf file treat karna
+
+git reset HEAD -- fileNameJiskoUnStageKrna      ==>> For Specific FIle name should mention here
+(it is old git coomand but its 100% relaible)
+
+
+git restore --staged fileNameJiskoUnStageKrna   ==>> For Specific FIle name should mention here
+(it is modern command)
+git restore --staged git-cheat-sheet-education.pdf
+
+git restore --staged .        ==>> For unsatage All File using Dot
+
+Dono safe, dono same kaam
